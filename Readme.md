@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Родионова](https://up.htmlacademy.ru/htmlcss/28/user/1445957).
-* Наставник: [Алина Шаймиева] (https://htmlacademy.ru/profile/id74223).
+* Наставник: Алина Шаймиева (https://htmlacademy.ru/profile/id74223).
 
 ---
 
