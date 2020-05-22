@@ -11,21 +11,21 @@
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Туризм в городке Седона, Аризона</h1>
       <section>
-        <h2>Добро пожаловать в Седону</h2>
-        <img src="img/slogan.png" alt="Welcome to the gorgeous Sedona!">
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
       <section>
-        <h2>Причины посетить Седону</h2>
+        <h2 class="visually-hidden">Причины посетить</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul>
           <li>
@@ -72,30 +72,52 @@
         </ul>
       </section>
       <section>
-        <h2>Поиск гостиниц</h2>
+        <h2 class="visually-hidden">Поиск гостиниц</h2>
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <form>
-          <!--здесь будет форма поиска гостиницы-->
+        <form action="https://echo.htmlacademy.ru/" method="GET">
+          <p>
+            <label for="check-in-date">Дата заезда:</label>
+            <input type="text" name="check-in" id="check-in-date" placeholder="24 апреля 2017">
+            <button type="button"><span class="visually-hidden">Календарь</span></button>
+          </p>
+          <p>
+            <label for="check-out-date">Дата выезда:</label>
+            <input type="text" name="check-out" id="check-out-date" placeholder="4 июля 2017">
+            <button type="button"><span class="visually-hidden">Календарь</span></button>
+          </p>
+          <p>
+            <label for="adults">Взрослые:</label>
+            <button type="button">-</button>
+            <input type="text" name="adults" id="adults" value="2">
+            <button type="button">+</button>
+
+            <label for="children">Дети:</label>
+            <button type="button">-</button>
+            <input type="text" name="children" id="children" value="0">
+            <button type="button">+</button>
+          </p>
+            <button type="submit">Найти</button>
         </form>
       </section>
       <section>
-        <h2>Карта Седоны</h2>
+        <h2 class="visually-hidden">Карта Седоны</h2>
+        <img src="img/map.png" width="1199" height="594" alt="Карта Седоны и окрестностей">
       </section>
     </main>
     <footer>
-      <p><a href="">#visitSEDONA</a><br>ТЕЛ: +7(495) 666-01-66</p>
+      <p><a href="#">#visitSEDONA</a><br>ТЕЛ: +7(495) 666-01-66</p>
       <div>
         <ul>
           <li>
-            <a href="">Twitter</a>
+            <a href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
           <li>
-            <a href="">Facebook</a>
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li>
-            <a href="">Youtube</a>
+            <a href="#"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
       </div>
