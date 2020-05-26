@@ -1,3 +1,11 @@
-<svg width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
+<svg width="1200" height="59" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="#fff" d="m0,60.000004l0,-60.000004l250,25.263159l0,-25.263159l350,60.000004l350,-60.000004l0,25.263159l250,-25.263159l0,60.000004l-1200,0z"/>
+ </g>
 </svg>
