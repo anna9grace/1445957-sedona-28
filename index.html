@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" >
             <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
           </a>
           <ul class="site-navigation nav-left">
@@ -92,10 +92,10 @@
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="btn btn-1 btn-open-search" type="button">Поиск гостиницы в Седоне</button>
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <form class="search-form form-show" action="https://echo.htmlacademy.ru/" method="POST">
               <label class="label-long" for="check-in-date">Дата заезда:</label>
               <p class="input-long">
-                <input type="text" name="check-in" id="check-in-date" value="24 апреля 2017">
+                <input type="text" name="check-in" id="check-in-date" placeholder="24 апреля 2017">
                 <button class="btn btn-calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
                   <svg width="21" height="23" viewBox="0 0 21 23">
@@ -106,7 +106,7 @@
               </p>
               <label class="label-long" for="check-out-date">Дата выезда:</label>
               <p class="input-long">
-                <input type="text" name="check-out" id="check-out-date" value="4 июля 2017">
+                <input type="text" name="check-out" id="check-out-date" placeholder="4 июля 2017">
                 <button class="btn btn-calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
                   <svg width="21" height="23" viewBox="0 0 21 23">
@@ -118,13 +118,13 @@
               <label class="label-short" for="adults">Взрослые:</label>
               <p class="input-short">
                 <button class="btn btn-controls" type="button">&mdash;</button>
-                <input type="text" name="adults" id="adults" value="2">
+                <input type="text" name="adults" id="adults" placeholder="2">
                 <button class="btn btn-controls" type="button">&plus;</button>
               </p>
               <label class="label-short" for="children">Дети:</label>
               <p class="input-short">
                 <button class="btn btn-controls" type="button">&mdash;</button>
-                <input type="text" name="children" id="children" value="0">
+                <input type="text" name="children" id="children" placeholder="0">
                 <button class="btn btn-controls" type="button">&plus;</button>
               </p>
                  <button class="btn btn-2" type="submit">Найти</button>
@@ -134,7 +134,7 @@
       <section class="map">
         <div class="container container-page-width">
           <h2 class="visually-hidden">Карта Седоны</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592581.6683011492!2d-112.04796275425143!3d34.86672504782403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1591646645237!5m2!1sru!2sru" width="1199" height="594" title="город Седона в штате Аризона вблизи Флагстаффа, 86336, США"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592581.6683011492!2d-112.04796275425143!3d34.86672504782403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1591646645237!5m2!1sru!2sru" tabindex="-1" width="1199" height="594" title="город Седона в штате Аризона вблизи Флагстаффа, 86336, США"></iframe>
         </div>
       </section>
     </main>
@@ -182,5 +182,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

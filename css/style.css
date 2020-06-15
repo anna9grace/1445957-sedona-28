@@ -26,6 +26,8 @@
 --basic-brown: #766357;
 --basic-brown-dark: #604E43;
 --basic-brown-extra: #503E33;
+
+--basic-error: #f2dcdc;
 }
 
 .visually-hidden {
@@ -343,9 +345,11 @@ img {
 }
 
 .btn-open-search {
+  position: relative;
   min-height: 86px;
   width: 100%;
   padding: 20px 30px;
+  z-index: 1;
 }
 
 .search-form {
@@ -359,6 +363,20 @@ img {
   align-items: center;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px var(--basic-shadow-form);
+}
+
+.form-hide {
+  display: none;
+}
+
+.form-show {
+  display: grid;
+  animation: glide 0.5s;
+}
+
+.search-form .form-error {
+  background-color: var(--basic-error);
+  box-shadow: inset 0 0 2px 2px var(--basic-brown);
 }
 
 .search-form p {
@@ -484,6 +502,14 @@ img {
 
 .btn-calendar {
   padding: 4px 8px 0 7px;
+}
+
+.btn-calendar:hover path {
+  fill: var(--basic-black);
+}
+
+.btn-calendar:active path {
+  fill: var(--basic-blue);
 }
 
 .btn-controls {
@@ -984,3 +1010,14 @@ img {
 .subfeature-text h3 {
 vertical-align: baseline;
 }
+
+@keyframes glide{
+  0% {
+    transform: translateY(-50%) scaleY(0%);
+  }
+
+  100% {
+    transform: translateY(0%) scaleY(100%);
+  }
+}
+
