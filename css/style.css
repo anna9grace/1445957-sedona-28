@@ -64,10 +64,6 @@ a {
   text-decoration: none;
 }
 
-/* a:focus {
-  outline: none;
-} */
-
 img {
   max-width: 100%;
   height: auto;
@@ -78,6 +74,7 @@ img {
 }
 
 .page-body {
+  position: relative;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -184,9 +181,6 @@ img {
   background-size:  100% auto;
   background-position: bottom;
 }
-
-
-/* блок преимуществ */
 
 .features h2,
 .features h3,
@@ -346,8 +340,6 @@ img {
   background-image: url(../img/icon-2.svg);
 }
 
-/* поиск отеля */
-
 .container-hotel > p {
   margin-top: 22px;
   margin-bottom: 43px;
@@ -380,6 +372,7 @@ img {
   align-items: center;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px var(--basic-shadow-form);
+  z-index: 2;
 }
 
 .form-hide {
@@ -478,7 +471,6 @@ img {
   line-height: 26px;
 }
 
-
 .btn:focus,
 .btn-sort:focus {
   outline: 1px solid var(--basic-gray-extra);
@@ -554,16 +546,19 @@ img {
 
 .map {
   width: 100%;
+}
+
+.map .container {
+  height: 594px;
   line-height: 0;
 }
 
 .map iframe {
   width: 100%;
   border: none;
+  background-image: url("../img/map.png");
+  background-size: cover;
 }
-
-
-/* футер */
 
 .main-footer {
   min-height: 120px;
@@ -573,15 +568,18 @@ img {
 }
 
 .main-page-footer {
-  position: relative;
-  margin-top: -120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-color: var(--basic-transparent);
   z-index: 1;
 }
 
 .main-footer .container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   height: 100%;
   padding: 22px 0 20px 0;
 }
@@ -625,6 +623,7 @@ img {
   min-width: 155px;
   height: auto;
   flex-basis: 300px;
+  margin: auto;
 }
 
 .socials-list {
@@ -670,8 +669,6 @@ img {
 .link-academy:active path {
   fill: var(--basic-gray-academy);
 }
-
-/*фильтр гостиниц*/
 
 .filters {
   color: var(--basic-white);
@@ -844,8 +841,6 @@ img {
   transform: scale(1.15);
 }
 
-/* сортировка */
-
 .sort-by .container{
   display: flex;
   margin-top: 29px;
@@ -932,9 +927,6 @@ img {
 .btn-sort.active {
   border: none;
 }
-
-
-/*отели список результатов*/
 
 .hotels-list {
   display: flex;
