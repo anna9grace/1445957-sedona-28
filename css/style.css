@@ -175,7 +175,7 @@ img {
   margin-bottom: 40px;
   background-color: var(--basic-dark);
   background-image:
-    url("../img/Shape.svg"),
+    url("../img/shape.svg"),
     url("../img/background_photo.jpg");
   background-repeat: no-repeat;
   background-size:  100% auto;
