@@ -176,7 +176,7 @@ img {
   background-color: var(--basic-dark);
   background-image:
     url("../img/shape.svg"),
-    url("../img/background_photo.jpg");
+    url("../img/backgroundphoto.jpg");
   background-repeat: no-repeat;
   background-size:  100% auto;
   background-position: bottom;
@@ -673,7 +673,7 @@ img {
 .filters {
   color: var(--basic-white);
   background-color: var(--basic-blue-extra);
-  background-image: url(../img/background_hotels.jpg);
+  background-image: url(../img/backgroundhotels.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
