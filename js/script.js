@@ -17,6 +17,7 @@ try {
   isStorageSupport = false;
 }
 
+form.classList.add("form-hide");
 
 formButton.addEventListener("click", function(evt) {
   evt.preventDefault();

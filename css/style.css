@@ -173,7 +173,7 @@ img {
   width: 100%;
   padding-top: 77px;
   margin-bottom: 40px;
-  background-color: var(--basic-dark);
+  background-color: var(--basic-blue-extra);
   background-image:
     url("../img/shap.svg"),
     url("../img/backgroundphoto.jpg");
@@ -354,10 +354,12 @@ img {
 }
 
 .btn-open-search {
+  display: inline-block;
   position: relative;
   min-height: 86px;
   width: 100%;
-  padding: 20px 30px;
+  padding: 30px 30px;
+  vertical-align: middle;
   z-index: 1;
 }
 
@@ -455,8 +457,7 @@ img {
 
 .search-form input:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-gray-inpt);
-  outline: none;
+  outline: 2px solid var(--basic-gray-inpt);
 }
 
 .btn {
