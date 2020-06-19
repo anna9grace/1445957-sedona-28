@@ -19,10 +19,12 @@ try {
 
 form.classList.add("form-hide");
 
+
 formButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   form.classList.toggle("form-hide");
   form.classList.toggle("form-show");
+  form.classList.remove("form-error");
   checkIn.focus();
 
   if (storageAdults) {
@@ -39,7 +41,10 @@ form.addEventListener("submit", function(evt) {
   for (formField of formFields) {
     if (!formField.value) {
       evt.preventDefault();
-      formField.classList.add("form-error");
+      form.classList.remove("form-error");
+      form.offsetWidth = form.offsetWidth;
+      form.classList.add("form-error");
+      formField.classList.add("input-error");
     } else {
     localStorage.setItem("adults", adults.value);
     localStorage.setItem("children", children.value);
@@ -50,7 +55,7 @@ form.addEventListener("submit", function(evt) {
 
 form.addEventListener("keydown", function(evt) {
     for (formField of formFields) {
-    formField.classList.remove("form-error");
+    formField.classList.remove("input-error");
     }
   }
 )
